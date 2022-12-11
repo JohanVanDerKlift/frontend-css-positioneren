@@ -1,8 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root {
+    --oranje: #DE6127;
+    --lichtgrijs: #e8e8e8;
+    --donkergrijs: #737373;
+    --bol1: #faa0c7;
+    --bol2: #272729;
+    --bol3: #928471 ;
+    --bol4: #c2c2b4;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 .product {
     /* "auto" aan de zijkanten zorgt ervoor dat het element in het midden komt te staan*/
     margin: 80px auto;
     /* Dit element heeft een vaste breedte van 350 pixels */
     width: 350px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container__flag {
+    position: absolute;
+    left: -55px;
+    top: 50px;
+    background-color: var(--lichtgrijs);
+    color: var(--oranje);
+    rotate: 270deg;
+    width: 70px;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 7px;
+}
+
+.image-container__image {
+    width: 100%;
+}
+
+.image-container__favorite {
+    position: absolute;
+    width: 18px;
+    bottom: 15px;
+    right: 15px;
+}
+
+.info-container__choice {
+    color: var(--donkergrijs);
+    font-size: 12px;
+}
+
+.info-container__title {
+    font-weight: bold;
+}
+
+.info-container__price {
+    font-weight: bold;
+}
+
+.info-container__bol {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+
+.bol-1 {
+    background-color: var(--bol1);;
+}
+
+.bol-2 {
+    background-color: var(--bol2);;
+
+}
+
+.bol-3 {
+    background-color: var(--bol3);;
+
+}
+
+.bol-4 {
+    background-color: var(--bol4);;
+
 }
 
 /* - Vul dit document aan met jouw eigen css! - */
